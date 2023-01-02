@@ -11,8 +11,8 @@
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
-	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/openai,type=bind",
+	"workspaceFolder": "/workspaces/openai",
 	"extensions": ["ms-python.python", "eamodio.gitlens", "humao.rest-client"]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
