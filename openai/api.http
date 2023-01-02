@@ -53,3 +53,29 @@ query {
     }
   }
 }
+
+###
+# ask a question
+POST http://localhost:8080/v1/graphql
+X-Request-Type: GraphQL
+Content-Type: application/json
+
+query {
+  Get {
+    Document(
+      ask: {
+        question: "What do professional athletes seek to boost from breathing oxygen?",
+        properties: ["context"]
+      },
+      limit: 5
+    ) {
+      context
+      _additional {
+        answer {
+          hasAnswer
+          result
+        }
+      }
+    }
+  }
+}
