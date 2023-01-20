@@ -13,7 +13,8 @@
 	},
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/openai,type=bind",
 	"workspaceFolder": "/workspaces/openai",
-	"extensions": ["ms-python.python", "eamodio.gitlens", "humao.rest-client"]
+	"extensions": ["ms-python.python", "eamodio.gitlens", "humao.rest-client"],
+	"containerEnv": {"OPENAI_APIKEY": "sk-foo"}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
